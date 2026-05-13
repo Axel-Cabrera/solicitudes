@@ -77,6 +77,12 @@ export default function RequestDetail() {
             <dd className="text-gray-800">{request.area_name}</dd>
           </div>
           <div>
+            <dt className="text-gray-400">Prioridad</dt>
+            <dd className={`capitalize [request.priority] || 'text-gray-800'}`}>
+              {request.priority}
+            </dd>
+          </div>
+          <div>
             <dt className="text-gray-400">Categoría</dt>
             <dd className="text-gray-800">{request.category_name || '—'}</dd>
           </div>
